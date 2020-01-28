@@ -6,6 +6,10 @@ with shelve.open('ShelfTest') as fruit:
     fruit['lemon'] = "a sour fruit"
     fruit['grape'] = "a small sweet fruit"
     fruit['lime'] = "a sour green citrus fruit"
+    fruit['lime'] = "great with tequila"
+
+    for snack in fruit:
+        print(snack + ": " + fruit[snack])
 
     print(fruit["lemon"])
     print(fruit["grape"])

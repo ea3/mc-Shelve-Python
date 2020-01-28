@@ -5,6 +5,13 @@ with shelve.open("bike") as bike:
     bike["color"] = "Red"
     bike["engine_size"] = 250
 
+    for key in bike:
+        print(key)
+
+    print("++++++++++++++++++")
+
     print(bike["engine_size"])
     print(bike["color"])
+
+
 
